@@ -13,6 +13,18 @@ class AddTodo extends Component {
         this.onRegister = this.onRegister.bind(this)
     }
 
+    onChangeTitle(e) {
+        this.setState({
+            title: e.target.value
+        })
+    }
+
+    onChangeDetail(e) {
+        this.setState({
+            detail: e.target.value
+        })
+    }
+
     render() {
         return (
             <div>
