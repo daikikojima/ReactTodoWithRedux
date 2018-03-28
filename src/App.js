@@ -32,7 +32,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Todo Apps</h1>
         </header>
-        <List props = {this.state} />
+        <List props = {this.state} delete = {this.delete.bind(this)}/>
         <AddTodo props = {this.state} addTodo={this.addTodo.bind(this)} />
       </div>
     );
