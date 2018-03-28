@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class List extends Component {
+    deleteItem(id) {
+        this.props.delete(id)
+    }
+
     render() {
         return (
             <div>
