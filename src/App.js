@@ -5,6 +5,14 @@ import AddTodo from './AddTodo';
 import List from './List'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      todos: []
+    }
+    this.addTodo = this.addTodo.bind(this)
+  }
+
   render() {
     return (
       <div className="App">
