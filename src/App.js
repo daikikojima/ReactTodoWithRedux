@@ -11,6 +11,7 @@ class App extends Component {
       todos: []
     }
     this.addTodo = this.addTodo.bind(this)
+    this.delete = this.delete.bind(this)
   }
 
   addTodo(todo) {
