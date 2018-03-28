@@ -18,6 +18,13 @@ class App extends Component {
       todos: [...this.state.todos, todo]
     })
   }
+
+  delete(id) {
+    this.state.todos.splice(id, 1)
+    this.setState({
+      todos: this.state.todos
+    })
+  }
   
   render() {
     return (
