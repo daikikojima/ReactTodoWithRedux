@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class List extends Component {
     render() {
@@ -11,6 +12,10 @@ class List extends Component {
             </div>
         )
     }
+}
+
+List.propTypes = {
+    delete: PropTypes.func
 }
 
 export default List
