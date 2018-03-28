@@ -25,6 +25,14 @@ class AddTodo extends Component {
         })
     }
 
+    onRegister() {
+        this.props.addTodo({title: this.state.title, detail: this.state.detail})
+        this.setState({
+            title: "",
+            detail: ""
+        })
+    }
+
     render() {
         return (
             <div>
