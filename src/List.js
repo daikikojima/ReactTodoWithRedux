@@ -16,7 +16,7 @@ class List extends Component {
             <div>
                 <h2>List</h2>
                 <ul>
-                    {this.props.props.todos.map(todo => <li>{todo.title} : {todo.detail}</li>)}
+                    {this.props.props.todos.map((todo, i) => <li key={i}>{todo.title} : {todo.detail}<button onClick={() => this.deleteItem(i)}>削除</button></li>)}
                 </ul>
             </div>
         )
