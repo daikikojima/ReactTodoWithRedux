@@ -13,6 +13,12 @@ class App extends Component {
     this.addTodo = this.addTodo.bind(this)
   }
 
+  addTodo(todo) {
+    this.setState({
+      todos: [...this.state.todos, todo]
+    })
+  }
+  
   render() {
     return (
       <div className="App">
