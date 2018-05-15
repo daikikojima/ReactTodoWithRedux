@@ -1,4 +1,10 @@
 import React, { Component } from 'react'
+import { 
+    Badge,
+    Button,
+    ListGroup,
+    ListGroupItem,
+} from 'react-bootstrap'
 import PropTypes from 'prop-types'
 
 class List extends Component {
@@ -6,9 +12,9 @@ class List extends Component {
         return (
             <div>
                 <h2>List</h2>
-                <ul>
-                    {this.props.todos.map((todo, i) => <li key={todo.id}>{todo.title} : {todo.detail}<button onClick={() => this.props.handleTodoDelete(todo.id)}>削除</button></li>)}
-                </ul>
+                <ListGroup>
+                    {this.props.todos.map((todo, i) => <ListGroupItem key={todo.id}>{todo.title} : {todo.detail}<Button bsStyle="danger" onClick={() => this.props.handleTodoDelete(todo.id)}>削除</Button></ListGroupItem>)}
+                </ListGroup>
             </div>
         )
     }
