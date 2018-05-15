@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import AddTodo from '../containers/AddTodo';
 import List from '../containers/List'
 
